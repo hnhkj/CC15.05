@@ -181,7 +181,7 @@
 			label = "S9";
 			gpios = <&gpio0 19 1>;		//GPIO19-S9
 			linux,code = <0x105>;
-		}
+		};
 	};
 
 	wgpio: gpio-wifi {
