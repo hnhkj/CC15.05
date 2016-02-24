@@ -82,7 +82,7 @@
 				factory: partition@40000 {
 					label = "factory";
 					reg = <0x40000 0x10000>;
-					read-only;
+					//read-only;
 				};
 
 				partition@50000 {
@@ -113,7 +113,7 @@
 		};
 
 		pwm@5000 {
-			status = "okay";
+			status = "disabled";
 		};
 	};
 
@@ -152,6 +152,36 @@
 			gpios = <&gpio1 6 1>;
 			linux,code = <0x211>;
 		};
+		BTN_0 {
+			label = "BTN_0";
+			gpios = <&gpio0 14 1>;		//GPIO14-S4
+			linux,code = <0x100>;
+		};
+		BTN_1 {
+			label = "BTN_1";
+			gpios = <&gpio0 15 1>;		//GPIO15-S5
+			linux,code = <0x101>;
+		};
+		BTN_2 {
+			label = "BTN_2";
+			gpios = <&gpio0 16 1>;		//GPIO16-S6
+			linux,code = <0x102>;
+		};
+		BTN_3 {
+			label = "BNT_3";
+			gpios = <&gpio0 17 1>;		//GPIO17-S7
+			linux,code = <0x103>;
+		};
+		BTN_4 {
+			label = "BTN_4";
+			gpios = <&gpio0 18 1>;		//GPIO18-S8
+			linux,code = <0x104>;
+		};
+		BTN_5 {
+			label = "S9";
+			gpios = <&gpio0 19 1>;		//GPIO19-S9
+			linux,code = <0x105>;
+		}
 	};
 
 	wgpio: gpio-wifi {
