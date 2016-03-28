@@ -14,6 +14,7 @@
 /feeds.conf
 /files
 /package/feeds
+/package/moh
 /package/openwrt-packages
 key-build*
 *.orig
