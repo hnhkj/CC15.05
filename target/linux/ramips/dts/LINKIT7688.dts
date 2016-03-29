@@ -148,7 +148,7 @@
 		#size-cells = <0>;
 		poll-interval = <20>;
 		wps {
-			label = "reset";
+			label = "wps";
 			gpios = <&gpio1 6 1>;
 			linux,code = <0x211>;
 		};
@@ -178,7 +178,7 @@
 			linux,code = <0x104>;
 		};
 		BTN_5 {
-			label = "S9";
+			label = "BTN_5";
 			gpios = <&gpio0 19 1>;		//GPIO19-S9
 			linux,code = <0x105>;
 		};
