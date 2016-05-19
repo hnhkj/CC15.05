@@ -149,7 +149,7 @@
 		poll-interval = <20>;
 		wps {
 			label = "wps";
-			gpios = <&gpio1 6 1>;
+			gpios = <&gpio1 6 1>;			//GPIO38-WIFI Button
 			linux,code = <0x211>;
 		};
 		BTN_0 {
@@ -174,12 +174,12 @@
 		};
 		BTN_4 {
 			label = "BTN_4";
-			gpios = <&gpio0 18 1>;		//GPIO18-S8
+			gpios = <&gpio1 8 1>;			//GPIO40-S8(40-32=8)
 			linux,code = <0x104>;
 		};
 		BTN_5 {
 			label = "BTN_5";
-			gpios = <&gpio0 19 1>;		//GPIO19-S9
+			gpios = <&gpio1 7 1>;			//GPIO39-S9(39-32=7)
 			linux,code = <0x105>;
 		};
 	};
