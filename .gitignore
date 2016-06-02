@@ -15,6 +15,7 @@
 /files
 /package/feeds
 /package/moh
+/package/applications
 /package/openwrt-packages
 key-build*
 *.orig
