@@ -1,0 +1,18 @@
+# CHANGE
+
+## 项目简介
+
+MOHPlayer分支，采用Openwrt系统，MT7688A芯片的一个新的系统。硬件型号为IR077E.
+
+* IR077E
+* MT7688A
+* create this branch for ethernet mohplayer.
+* modify a bug. python dont suppor some old function.
+
+## 问题
+
+#### 1. make menuconfig 出现错误 `Build dependency: Please install Git (git-core) >= 1.6.5`
+
+这是因为相关工具升级之后造成的，我们需要对Openwrt系统的git依赖文件进行升级。
+
+<https://github.com/openwrt/openwrt/commit/4c80909fa141fe2921c62bd17b2b04153031df18>
