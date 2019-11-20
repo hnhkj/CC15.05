@@ -23,6 +23,13 @@ cp config.diff .config
 make defconfig
 ```
 
+#### Changed
+
+```
+openwrt/package/ethMOH/*
+openwrt/package/mtk-sdk-wifi/*
+```
+
 ## ASK
 
 #### 1.0 make menuconfig - git version
