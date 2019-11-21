@@ -1,6 +1,6 @@
 # README_ethMOH
 
-## branches/ethMOH
+## CC15.05/ethMOH - working...
 
 * Hardware - IR077E
 * MCU - MT7688A
@@ -38,7 +38,7 @@ openwrt/package/mtk-sdk-wifi/*
 
 ## FAQ
 
-#### git version error when make menuconfig
+#### 1. git version error when make menuconfig
 
 *ERROR*
 
@@ -72,7 +72,7 @@ index 32c4adabb7..e79a727b0e 100644
 +       git –exec-path | xargs -I % – grep -q – –recursive %/git-submodule))
 ```
 
-#### gdate.c:2497:7: error: format not a string literal, format string not checked [-Werror=format-nonlit
+#### 2. gdate.c:2497:7: error: format not a string literal, format string not checked [-Werror=format-nonlit
 
 create files `tools/pkg-config/patches/001-glib-gdate-suppress-string-format-literal-warning.patch` and copy follow information to file.
 
@@ -97,7 +97,7 @@ create files `tools/pkg-config/patches/001-glib-gdate-suppress-string-format-lit
 +#pragma GCC diagnostic pop
 ```
 
-#### Unescaped left brace in regex is illegal here in regex; marked by <-- HERE in m/\${ <-- HERE ([^ \t=:+{}]+)}/ at ./bin/automake.tmp line 393
+#### 3. Unescaped left brace in regex is illegal here in regex; marked by <-- HERE in m/\${ <-- HERE ([^ \t=:+{}]+)}/ at ./bin/automake.tmp line 393
 
 see <https://blog.csdn.net/rainforest_c/article/details/82722198>
 
@@ -117,4 +117,20 @@ index 0ee37149dd..8ce621d1af 100644
 +  $text =~ s/\$[{]([^ \t=:+{}]+)}/substitute_ac_subst_variables_worker ($1)/ge;
    return $text;
  }
+```
+
+#### 4. fatal error: linux/compiler-gcc7.h: No such file or directory
+
+复制 <https://github.com/hnhkj/chaos_calmer.git> `tools/mkimage/patches/200-compiler-support.patch` 到相应的目录打补丁。
+
+
+#### fbtft LCD
+
+<https://github.com/notro/fbtft>
+
+
+#### 获取之前的提交信息
+
+```sh
+git pull --unshallow
 ```
